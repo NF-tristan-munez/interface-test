@@ -9,7 +9,7 @@ public class Health : MonoExt, IDamageable, IHealable
     public float MaxHP => MaxHealth.Value;
     public float HP;
 
-    private void Awake()
+    protected void Awake()
     {
         HP = MaxHP;
     }
@@ -19,7 +19,7 @@ public class Health : MonoExt, IDamageable, IHealable
         HP -= damageValue;
 
         if (HP <= 0)
-            Destroy(gameObject, 0.2f);
+            OnDeath();
     }
 
     public void ApplyHealing(float healingValue)
@@ -28,5 +28,10 @@ public class Health : MonoExt, IDamageable, IHealable
         
         if (HP > MaxHP)
             HP = MaxHP;
+    }
+
+    protected virtual void OnDeath()
+    {
+        Destroy(gameObject, 0.2f);
     }
 }

@@ -16,6 +16,16 @@ namespace _Project.Scripts.Gameplay.Breakable
             //Events
             OnSubscriptionSet();
         }
+        
+        public override void Initialize()
+        {
+            base.Initialize();
+        }
+    
+        public override void OnSubscriptionSet()
+        {
+            base.OnSubscriptionSet();
+        }    
 
         protected virtual void OnBreak()
         {
