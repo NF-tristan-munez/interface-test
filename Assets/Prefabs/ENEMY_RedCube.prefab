@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 6772676843829779504}
   - component: {fileID: 2289309476907061312}
   - component: {fileID: 4329086884533218667}
+  - component: {fileID: -2878963730668932097}
+  - component: {fileID: -2930381002293481479}
   m_Layer: 0
   m_Name: ENEMY_RedCube
   m_TagString: Untagged
@@ -159,4 +161,100 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   MaxHealth: {fileID: 11400000, guid: 441d04f780e6c7e41b111776915d6828, type: 2}
-  HP: 0
+  HP: 100
+--- !u!114 &-2878963730668932097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2708794089237627990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d42d08bdf2904276bd6494128cd9f404, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 1c907566c0259ff449ffc2fa89f33a46, type: 2}
+    - {fileID: 11400000, guid: 617657ae8a25a9442a85cfda8f563381, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: ArchetypeDictionary
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[ArchetypeExtendableEnum, Assembly-CSharp],[Archetype,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[ArchetypeExtendableEnum,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 0
+    - Name: $v
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  _movementStats: {fileID: 11400000, guid: 19ffc313a2c26ef4889c015655615fb5, type: 2}
+  _rigidbody: {fileID: 2289309476907061312}
+  _canCharacterMove: 1
+  _canCharacterRotate: 1
+  _enemyAI: {fileID: -2930381002293481479}
+  _archetype: {fileID: 11400000, guid: 617657ae8a25a9442a85cfda8f563381, type: 2}
+--- !u!114 &-2930381002293481479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2708794089237627990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d461521770e43d7b0dae7756b9f2892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Movement
+      Entry: 7
+      Data: 0|UniRx.Subject`1[[UnityEngine.Vector3, UnityEngine.CoreModule]], UniRx
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Ability
+      Entry: 7
+      Data: 1|UniRx.Subject`1[[AbilityExtendableEnum, Assembly-CSharp]], UniRx
+    - Name: 
+      Entry: 8
+      Data: 
+  target: {fileID: 0}
+  ability: {fileID: 0}

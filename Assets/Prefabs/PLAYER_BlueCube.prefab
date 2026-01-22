@@ -49,13 +49,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5016fc6164a322644bc098f516a0e9f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 7ee5e60adf1179f4aa1017076a873a1c, type: 2}
+    - {fileID: 11400000, guid: 44fd0602f826cf64fa6d2dc3d21bd0ff, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: ArchetypeDictionary
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[ArchetypeExtendableEnum, Assembly-CSharp],[Archetype,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[ArchetypeExtendableEnum,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 0
+    - Name: $v
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   _movementStats: {fileID: 11400000, guid: 19ffc313a2c26ef4889c015655615fb5, type: 2}
-  _playerInput: {fileID: 11400000, guid: bccb5b502b38ed64fb694b53d16cc9c6, type: 2}
   _rigidbody: {fileID: 2355309230547412661}
+  _canCharacterMove: 1
+  _canCharacterRotate: 1
+  _playerInput: {fileID: 11400000, guid: bccb5b502b38ed64fb694b53d16cc9c6, type: 2}
   _camera: {fileID: 0}
-  _abilityList: {fileID: 11400000, guid: 3c39be05980d0074db691ba77953e950, type: 2}
-  _canPlayerMove: 1
-  _canPlayerRotate: 1
 --- !u!33 &678273270418327487
 MeshFilter:
   m_ObjectHideFlags: 0

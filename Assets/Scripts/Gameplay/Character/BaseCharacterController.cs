@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -6,6 +7,8 @@ public class BaseCharacterController : MonoExt, IMovable, IRotatable
 {
     [TabGroup("References")] [SerializeField] protected MovementStats _movementStats;
     [TabGroup("References")] [SerializeField] private Rigidbody _rigidbody;
+    
+    public Dictionary<ArchetypeExtendableEnum, Archetype> ArchetypeDictionary = new Dictionary<ArchetypeExtendableEnum, Archetype>();
     
     [TabGroup("Debug")] [SerializeField] protected bool _canCharacterMove = true;
     [TabGroup("Debug")] [SerializeField] protected bool _canCharacterRotate = true;
