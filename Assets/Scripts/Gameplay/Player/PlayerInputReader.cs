@@ -62,6 +62,12 @@ public class PlayerInputReader : SerializedScriptableObject, InputSystem_Actions
         if(context.performed)
             Ability.OnNext(AbilityDictionary[3]);
     }
+    
+    public void OnAbility4(InputAction.CallbackContext context)
+    {
+        if(context.performed)
+            Ability.OnNext(AbilityDictionary[4]);
+    }
 
 }
 

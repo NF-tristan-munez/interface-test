@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "InputSystem_Actions",
     "maps": [
         {
@@ -36,6 +37,15 @@
                     "name": "Ability3",
                     "type": "Button",
                     "id": "2ad66b84-49bf-4990-b0bd-2d8c53db3ccd",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Ability4",
+                    "type": "Button",
+                    "id": "027b050b-b5ca-4d16-aa72-69744a610d89",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -183,6 +193,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Ability3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d31449cd-d325-4bd0-94fe-dd84ee461aa8",
+                    "path": "<Keyboard>/4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ability4",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
