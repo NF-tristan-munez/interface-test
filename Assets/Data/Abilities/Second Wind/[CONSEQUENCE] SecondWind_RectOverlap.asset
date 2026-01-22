@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d534e4b91cb24005b243f55f5cd8da8a, type: 3}
+  m_Name: '[CONSEQUENCE] SecondWind_RectOverlap'
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  NextConsequence: {fileID: 11400000, guid: 4414e3a3cc35ad349a3cc9371fbc5067, type: 2}
+  Width: {fileID: 11400000, guid: b07727fdc1c24e349bd261f006054359, type: 2}
+  Depth: {fileID: 11400000, guid: 07bbab91fd57e534bae37b3037de75cb, type: 2}
+  Height: {fileID: 11400000, guid: ce30c330627386c47b3d687224439738, type: 2}
+  FrontOffset: {fileID: 0}
+  CenterParameterKey: {fileID: 0}
+  TargetListParameterKey: {fileID: 0}
+  TargetTag: {fileID: 0}
+  IsVisualized: 0
+  VisualizerPrefab: {fileID: 0}
