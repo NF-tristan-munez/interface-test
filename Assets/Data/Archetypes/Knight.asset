@@ -21,8 +21,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _abilityList: {fileID: 0}
-  _abilityParameterHandler: {fileID: 0}
-  health: {fileID: 0}
-  _className: 
-  _classID: 
+  AbilityList: {fileID: 11400000, guid: 3c39be05980d0074db691ba77953e950, type: 2}
+  AbilityParameterHandler: {fileID: 11400000, guid: 1067540d4eef0c14c89a4c43eac2e488, type: 2}
+  MaxHealth: {fileID: 11400000, guid: def260c3e75ffde469cc7e95a85e29cf, type: 2}
+  ArchetypeName: Knight
+  ArchetypeEnum: {fileID: 11400000, guid: 7ee5e60adf1179f4aa1017076a873a1c, type: 2}

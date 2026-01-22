@@ -21,8 +21,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _abilityList: {fileID: 11400000, guid: 3c39be05980d0074db691ba77953e950, type: 2}
-  _abilityParameterHandler: {fileID: 11400000, guid: 1067540d4eef0c14c89a4c43eac2e488, type: 2}
+  AbilityList: {fileID: 11400000, guid: 74c5004bda64aa44c85148d47d502288, type: 2}
+  AbilityParameterHandler: {fileID: 11400000, guid: 1067540d4eef0c14c89a4c43eac2e488, type: 2}
   MaxHealth: {fileID: 11400000, guid: 441d04f780e6c7e41b111776915d6828, type: 2}
-  _archetypeName: 
-  _archetypeID: 
+  ArchetypeName: Skeleton Knight
+  ArchetypeEnum: {fileID: 11400000, guid: 1c907566c0259ff449ffc2fa89f33a46, type: 2}
