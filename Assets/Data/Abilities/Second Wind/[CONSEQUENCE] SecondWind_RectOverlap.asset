@@ -25,9 +25,9 @@ MonoBehaviour:
   Width: {fileID: 11400000, guid: b07727fdc1c24e349bd261f006054359, type: 2}
   Depth: {fileID: 11400000, guid: 07bbab91fd57e534bae37b3037de75cb, type: 2}
   Height: {fileID: 11400000, guid: ce30c330627386c47b3d687224439738, type: 2}
-  FrontOffset: {fileID: 0}
-  CenterParameterKey: {fileID: 0}
-  TargetListParameterKey: {fileID: 0}
-  TargetTag: {fileID: 0}
-  IsVisualized: 0
-  VisualizerPrefab: {fileID: 0}
+  FrontOffset: {fileID: 11400000, guid: 721b8114bc5258c4cab11e644c047db1, type: 2}
+  CenterParameterKey: {fileID: 11400000, guid: 83f84282e1a12074c904e48c25dc1ce3, type: 2}
+  TargetListParameterKey: {fileID: 11400000, guid: 88f2047015708074c8205207f50bbb9d, type: 2}
+  TargetTag: {fileID: 11400000, guid: 7d46183919bd19448bb5c718a8e6b301, type: 2}
+  IsVisualized: 1
+  VisualizerPrefab: {fileID: 3258453889424858441, guid: 6021b8da3e18d8e42ac0e7373cf86006, type: 3}

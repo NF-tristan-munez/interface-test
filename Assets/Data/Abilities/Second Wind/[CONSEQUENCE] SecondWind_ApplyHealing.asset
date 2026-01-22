@@ -22,5 +22,5 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   NextConsequence: {fileID: 0}
-  Healing: {fileID: 0}
-  AllyListParameterKey: {fileID: 0}
+  Healing: {fileID: 11400000, guid: 7326f66681adbd44ea00abbe6fa8db82, type: 2}
+  AllyListParameterKey: {fileID: 11400000, guid: 88f2047015708074c8205207f50bbb9d, type: 2}
