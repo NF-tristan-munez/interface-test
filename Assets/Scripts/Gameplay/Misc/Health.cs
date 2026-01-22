@@ -2,7 +2,7 @@
 using System;
 using UnityEngine;
 
-public class Health : MonoExt, IDamageable
+public class Health : MonoExt, IDamageable, IHealable
 {
     [SerializeField] private Stat MaxHealth;
 
@@ -20,5 +20,13 @@ public class Health : MonoExt, IDamageable
 
         if (HP <= 0)
             Destroy(gameObject, 0.2f);
+    }
+
+    public void ApplyHealing(float healingValue)
+    {
+        HP += healingValue;
+        
+        if (HP > MaxHP)
+            HP = MaxHP;
     }
 }
