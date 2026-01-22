@@ -7,7 +7,7 @@ public class PlayerController : BaseCharacterController, IAbilityCastable
     [TabGroup("References")] [SerializeField] private PlayerInputReader _playerInput;
     [TabGroup("References")] [SerializeField] private Camera _camera;
 
-    [TabGroup("Class")] private PlayerClass _class;
+    [TabGroup("Character Type")] private PlayerClass _class;
     
     
     private Vector2 _movementInput = Vector2.zero;

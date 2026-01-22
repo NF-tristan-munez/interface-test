@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class EnemyController : BaseCharacterController, IAbilityCastable
 {
-    [SerializeField] private EnemyAI _enemyAI;
+    [TabGroup("References")] [SerializeField] private EnemyAI _enemyAI;
 
-    [TabGroup("Ability")] [SerializeField] private AbilityList _abilityList;
-    [TabGroup("Ability")] [SerializeField] private AbilityParameterHandler _abilityParameterHandler;
+    [TabGroup("CharacterType")] [SerializeField] private EnemyType _enemyType;
     
     private Vector2 _movementInput = Vector2.zero;
     private void Awake()
@@ -24,8 +23,8 @@ public class EnemyController : BaseCharacterController, IAbilityCastable
     public override void Initialize()
     {
         base.Initialize();
-        _abilityList.InitializeAbilities();
-        _abilityParameterHandler.Initialize();
+        _enemyType._abilityList.InitializeAbilities();
+        _enemyType._abilityParameterHandler.Initialize();
     }
      
     public override void OnSubscriptionSet()
@@ -57,6 +56,6 @@ public class EnemyController : BaseCharacterController, IAbilityCastable
     public void OnAbilityCast(AbilityExtendableEnum abilityEnum)
     {
         Debug.Log($"Enemy cast ability: {abilityEnum.name}");
-        _abilityList.AbilityDictionary[abilityEnum].OnTriggerAbility(gameObject, _abilityParameterHandler);
+        _enemyType._abilityList.AbilityDictionary[abilityEnum].OnTriggerAbility(gameObject, _enemyType._abilityParameterHandler);
     }
 }
