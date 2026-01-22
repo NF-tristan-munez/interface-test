@@ -1,4 +1,5 @@
 using System;
+using _Project.Scripts.Gameplay.Interactable;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ public class PlayerController : BaseCharacterController, IAbilityCastable
     [TabGroup("References")] [SerializeField] private Camera _camera;
 
     [TabGroup("Character Type")] [SerializeField] private Archetype _archetype;
+    [TabGroup("Stats")] [SerializeField] private float _interactRange = 4f;
     
     private Vector2 _movementInput = Vector2.zero;
     private void Awake()
@@ -35,6 +37,7 @@ public class PlayerController : BaseCharacterController, IAbilityCastable
         //Event that handles player movement
         AddEvent(_playerInput.Movement,movementDirection => _movementInput = movementDirection);
         AddEvent(_playerInput.Ability, OnAbilityCast);
+        AddEvent(_playerInput.Interact, _ => TryInteract());
     }
 
     public void FixedUpdate()
@@ -57,5 +60,25 @@ public class PlayerController : BaseCharacterController, IAbilityCastable
     public void OnAbilityCast(AbilityExtendableEnum abilityEnum)
     {
        _archetype. AbilityList.AbilityDictionary[abilityEnum].OnTriggerAbility(gameObject, _archetype.AbilityParameterHandler);
+    }
+
+    private void TryInteract()
+    {
+        if (!_canCharacterMove)
+            return;
+        
+        Debug.DrawRay(transform.position + Vector3.up, transform.forward * _interactRange, Color.red, 1f);
+
+        if (Physics.Raycast(
+                transform.position + Vector3.up,
+                transform.forward,
+                out RaycastHit hit,
+                _interactRange))
+        {
+            if (hit.collider.GetComponentInParent<IInteractable>() is IInteractable interactable)
+            {
+                interactable.Interact(gameObject);
+            }
+        }
     }
 }
