@@ -5,14 +5,10 @@ using UnityEngine;
 public class PlayerController : BaseCharacterController, IAbilityCastable
 {
     [TabGroup("References")] [SerializeField] private PlayerInputReader _playerInput;
-    [TabGroup("References")] [SerializeField] private Rigidbody _rigidbody;
     [TabGroup("References")] [SerializeField] private Camera _camera;
 
     [TabGroup("Ability")] [SerializeField] private AbilityList _abilityList;
     [TabGroup("Ability")] [SerializeField] private AbilityParameterHandler _abilityParameterHandler;
-    
-    [TabGroup("Debug")] [SerializeField] private bool _canPlayerMove = true;
-    [TabGroup("Debug")] [SerializeField] private bool _canPlayerRotate = true;
     
     
     private Vector2 _movementInput = Vector2.zero;
@@ -51,7 +47,7 @@ public class PlayerController : BaseCharacterController, IAbilityCastable
     //Handles movement and rotation
     private void HandleMovement()
     {
-        if (!_canPlayerMove)
+        if (!_canCharacterMove)
             return;
         
         Vector3 normalizedDirection = Utility.CalculateCameraDirection(_camera, _movementInput);

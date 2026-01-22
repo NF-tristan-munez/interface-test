@@ -7,8 +7,8 @@ public class BaseCharacterController : MonoExt, IMovable, IRotatable
     [TabGroup("References")] [SerializeField] protected MovementStats _movementStats;
     [TabGroup("References")] [SerializeField] private Rigidbody _rigidbody;
     
-    [TabGroup("Debug")] [SerializeField] private bool _canCharacterMove = true;
-    [TabGroup("Debug")] [SerializeField] private bool _canCharacterRotate = true;
+    [TabGroup("Debug")] [SerializeField] protected bool _canCharacterMove = true;
+    [TabGroup("Debug")] [SerializeField] protected bool _canCharacterRotate = true;
     
     //Assigns care of character's movement
     public void Move(Vector3 movementDirection, MovementStats movementStats)
