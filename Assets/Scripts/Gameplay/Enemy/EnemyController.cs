@@ -17,7 +17,12 @@ public class EnemyController : BaseCharacterController, IAbilityCastable
     }
     private void Start()
     {
-        //Events
+        if (_enemyAI == null)
+        {
+            Debug.LogError("EnemyAI reference missing!");
+            return;
+        }
+
         OnSubscriptionSet();
     }
     

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6241620065082842296}
   - component: {fileID: 8553594809335486719}
   - component: {fileID: 2355309230547412661}
+  - component: {fileID: 4238872213265235645}
   m_Layer: 0
   m_Name: PLAYER_BlueCube
   m_TagString: Player
@@ -98,6 +99,7 @@ MonoBehaviour:
   _canCharacterRotate: 1
   _playerInput: {fileID: 11400000, guid: bccb5b502b38ed64fb694b53d16cc9c6, type: 2}
   _camera: {fileID: 0}
+  _archetype: {fileID: 11400000, guid: 44fd0602f826cf64fa6d2dc3d21bd0ff, type: 2}
 --- !u!33 &678273270418327487
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -199,6 +201,29 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &4238872213265235645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2901233407991900417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c793501c353b41268d8f54f41a652bca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  MaxHealth: {fileID: 11400000, guid: def260c3e75ffde469cc7e95a85e29cf, type: 2}
+  HP: 400
 --- !u!1 &7235891392908402173
 GameObject:
   m_ObjectHideFlags: 0
