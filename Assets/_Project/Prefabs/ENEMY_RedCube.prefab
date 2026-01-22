@@ -243,18 +243,7 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes:
-    - Name: Movement
-      Entry: 7
-      Data: 0|UniRx.Subject`1[[UnityEngine.Vector3, UnityEngine.CoreModule]], UniRx
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Ability
-      Entry: 7
-      Data: 1|UniRx.Subject`1[[AbilityExtendableEnum, Assembly-CSharp]], UniRx
-    - Name: 
-      Entry: 8
-      Data: 
+    SerializationNodes: []
   target: {fileID: 2597916100047661792, guid: b26bbdae9cb96ba498b6f19eebe207da, type: 3}
   ability: {fileID: 11400000, guid: 980a7fc31ac06bb4cbf1ee3ab46dfafe, type: 2}
+  abilityTriggerDistance: 3
