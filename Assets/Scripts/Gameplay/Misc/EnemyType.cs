@@ -10,9 +10,8 @@ public class EnemyType : SerializedScriptableObject
     [TabGroup("Ability")] [SerializeField] public AbilityParameterHandler _abilityParameterHandler;
     
     [TabGroup("Stats")]
-    [SerializeField] public Health health;
+    [SerializeField] public Stat MaxHealth;
     
-    [TabGroup("Identifier")]
-    [SerializeField] public string _className;
-    [SerializeField] public string _classID;
+    [TabGroup("Identifier")] [SerializeField] public string _className;
+    [TabGroup("Identifier")] [SerializeField] public string _classID;
 }
