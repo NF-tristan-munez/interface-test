@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea71d5d6dc694421b43be6a77675b099, type: 3}
-  m_Name: Skeleton
+  m_Name: Skeleton Knight
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
