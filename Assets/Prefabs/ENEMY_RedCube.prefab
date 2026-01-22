@@ -256,5 +256,5 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  target: {fileID: 0}
-  ability: {fileID: 0}
+  target: {fileID: 2597916100047661792, guid: b26bbdae9cb96ba498b6f19eebe207da, type: 3}
+  ability: {fileID: 11400000, guid: 980a7fc31ac06bb4cbf1ee3ab46dfafe, type: 2}

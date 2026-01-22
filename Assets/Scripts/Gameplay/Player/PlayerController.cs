@@ -7,7 +7,7 @@ public class PlayerController : BaseCharacterController, IAbilityCastable
     [TabGroup("References")] [SerializeField] private PlayerInputReader _playerInput;
     [TabGroup("References")] [SerializeField] private Camera _camera;
 
-    [TabGroup("Character Type")] private Archetype _archetype;
+    [TabGroup("Character Type")] [SerializeField] private Archetype _archetype;
     
     private Vector2 _movementInput = Vector2.zero;
     private void Awake()
