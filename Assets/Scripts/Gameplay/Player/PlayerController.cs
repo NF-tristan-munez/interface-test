@@ -7,8 +7,7 @@ public class PlayerController : BaseCharacterController, IAbilityCastable
     [TabGroup("References")] [SerializeField] private PlayerInputReader _playerInput;
     [TabGroup("References")] [SerializeField] private Camera _camera;
 
-    [TabGroup("Ability")] [SerializeField] private AbilityList _abilityList;
-    [TabGroup("Ability")] [SerializeField] private AbilityParameterHandler _abilityParameterHandler;
+    [TabGroup("Class")] private PlayerClass _class;
     
     
     private Vector2 _movementInput = Vector2.zero;
@@ -27,8 +26,8 @@ public class PlayerController : BaseCharacterController, IAbilityCastable
     {
         base.Initialize();
         _playerInput.EnablePlayerActions();
-        _abilityList.InitializeAbilities();
-        _abilityParameterHandler.Initialize();
+        _class._abilityList.InitializeAbilities();
+        _class._abilityParameterHandler.Initialize();
     }
      
     public override void OnSubscriptionSet()
@@ -58,6 +57,6 @@ public class PlayerController : BaseCharacterController, IAbilityCastable
 
     public void OnAbilityCast(AbilityExtendableEnum abilityEnum)
     {
-        _abilityList.AbilityDictionary[abilityEnum].OnTriggerAbility(gameObject, _abilityParameterHandler);
+       _class. _abilityList.AbilityDictionary[abilityEnum].OnTriggerAbility(gameObject, _class._abilityParameterHandler);
     }
 }
