@@ -19,9 +19,9 @@ namespace NF.Main.Gameplay
             _stateMachine.Update();
         }
 
-        public override void Initialize(object data = null)
+        public void Initialize(object data = null)
         {
-            base.Initialize(data);
+            base.Initialize();
             GameState = GameState.Playing;
             SetupStateMachine();
         }

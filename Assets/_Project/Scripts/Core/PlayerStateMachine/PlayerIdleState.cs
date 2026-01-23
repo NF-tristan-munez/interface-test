@@ -1,4 +1,3 @@
-using NF.Main.Gameplay.PlayerInput;
 using UnityEngine;
 
 namespace NF.Main.Core.PlayerStateMachine
