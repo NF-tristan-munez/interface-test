@@ -9,7 +9,7 @@ namespace _Project.Scripts.Gameplay.Breakable
     {
         [TabGroup("Loot Drop")] [SerializeField] private LootEntry[] _lootTable;
         [TabGroup("Loot Drop")] [SerializeField] private Transform _lootSpawnPoint;
-        [TabGroup("Loot Drop")] [SerializeField] private float _spawnRadius = 0.75f;
+        [TabGroup("Loot Drop")] [SerializeField] private float _spawnRadius = 3f;
 
         protected override void OnBreak()
         {
@@ -31,13 +31,19 @@ namespace _Project.Scripts.Gameplay.Breakable
 
                 for (int i = 0; i < amount; i++)
                 {
-                    Vector3 spawnPos = Random.insideUnitSphere * _spawnRadius;
-                    spawnPos.y = 0.5f;
+                    Vector3 offset = Random.insideUnitSphere * _spawnRadius;
+                    offset.y = 0.5f;
                     
-                    Instantiate(
+                    Vector3 start = _lootSpawnPoint.position;
+                    Vector3 end = start + offset;
+                    
+                    GameObject lootDrop = Instantiate(
                         loot.Prefab,
-                        _lootSpawnPoint.position + spawnPos,
+                        start,
                         Quaternion.identity);
+                    
+                    LootFlyOut flyOut = lootDrop.AddComponent<LootFlyOut>();
+                    flyOut.Play(start, end);
                 }
             }
         }
