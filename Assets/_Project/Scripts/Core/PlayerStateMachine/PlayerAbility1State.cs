@@ -3,9 +3,9 @@ using UnityEngine;
 namespace NF.Main.Core.PlayerStateMachine
 {
     //Handles all logic for when player goes in, out, and during idle state
-    public class PlayerIdleState: PlayerBaseState
+    public class PlayerAbility1State: PlayerBaseState
     {
-        public PlayerIdleState(PlayerController playerController, Animator animator) : base(playerController, animator)
+        public PlayerAbility1State(PlayerController playerController, Animator animator) : base(playerController, animator)
         {
         }
         
@@ -14,21 +14,26 @@ namespace NF.Main.Core.PlayerStateMachine
             base.OnEnter();
             
             //Use this for transitioning between different animator hashes
-            _animator.CrossFade(IdleHash, 0.5f);
+            _playerController.LockMovement();
+            _animator.CrossFade(Ability1Hash, 0.2f);
             
-            Debug.Log("Entering Player Idle State");
+            Debug.Log("Entering Player Ability1 State");
         }
 
         public override void Update()
         {
             base.Update();
-            // Debug.Log("Player is Idling");
+        }
+
+        public override void FixedUpdate()
+        {
         }
 
         public override void OnExit()
         {
+            _playerController.UnlockMovement();
             base.OnExit();
-            Debug.Log("Exiting Player Idle State");
+            Debug.Log("Ability 1 State Exited");
         }
     }
 }
